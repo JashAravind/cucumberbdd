@@ -12,10 +12,10 @@ In terminal run below command
         mvn clean test -Dbrowser=firefox
     # Default - Chrome
         mvn clean test -Dbrowser=chrome
-To choose different environment run below command
-
-mvn clean test -Denv=STAGE  or mvn clean test -Denv=PROD
-
+    # Different Environment 
+        mvn clean test -Denv=STAGE  or mvn clean test -Denv=PROD
+    # Based on cucumber tags
+        mvn test -Dcucumber.options="--tags '@demo'"
 # Report
     
     After run - in terminal - reports link will be available
